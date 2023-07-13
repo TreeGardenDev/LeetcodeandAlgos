@@ -64,3 +64,46 @@ def combine_possibilities(possiblevalues, original):
     return components
 
 
+####TESTS
+num=1
+factor=find_final_factor(num)
+deconstructed=deconstruct(factor)
+result=combine_possibilities(deconstructed, num)
+print(result)
+print("Sum result is: ",sum(result))
+assert sum(result)==num
+
+num=1023
+factor=find_final_factor(num)
+deconstructed=deconstruct(factor)
+result=combine_possibilities(deconstructed, num)
+print(result)
+print("Sum result is: ",sum(result))
+assert sum(result)==num
+
+num=74798439
+factor=find_final_factor(num)
+deconstructed=deconstruct(factor)
+result=combine_possibilities(deconstructed, num)
+print(result)
+print("Sum result is: ",sum(result))
+assert sum(result)==num
+
+
+num=4294967295
+factor=find_final_factor(num)
+deconstructed=deconstruct(factor)
+result=combine_possibilities(deconstructed, num)
+print(result)
+print("Sum result is: ",sum(result))
+assert sum(result)==num
+#for i in range(1,  4294967296):
+#    num=i
+#    print("original is: ", num)
+#    factor=find_final_factor(num)
+#    deconstructed=deconstruct(factor)
+#    result=combine_possibilities(deconstructed, num)
+#    print(result)
+#    print("Sum result is: ",sum(result))
+#    assert sum(result)==num
+

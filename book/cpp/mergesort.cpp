@@ -34,11 +34,11 @@ std::vector<int> mergesort(std::vector<int>vec1, std::vector<int>vec2){
     std::vector<int> sorted;
     for (int i=0; i<vec1.size();){
         for (int j=0; j<vec2.size();){
-            if (i<vec1.size() & vec1[i]<=vec2[j] | j==vec2.size()){
+            if ((i<vec1.size() & vec1[i]<=vec2[j]) | (j==vec2.size())){
                sorted.push_back(vec1[i]);
                i++;
             }
-            if (j<vec2.size() & vec2[j]<vec1[i] | i==vec1.size()){
+            if ((j<vec2.size() & vec2[j]<vec1[i]) | (i==vec1.size())){
                 sorted.push_back(vec2[j]);
                 j++;
             }

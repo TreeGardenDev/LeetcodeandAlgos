@@ -1,11 +1,3 @@
-def check_voter(name):
-    if voted.get(name):
-        print("kick them out!")
-    else:
-        voted[name] = True
-        print("let them vote!")
-
-
 book = dict()
 book["apple"] = 0.67
 book["milk"] = 1.49
@@ -22,3 +14,11 @@ voted = {}
 check_voter("tom")
 check_voter("mike")
 check_voter("mike")
+
+
+def check_voter(name):
+    if voted.get(name):
+        print("kick them out!")
+    else:
+        voted[name] = True
+        print("let them vote!")
